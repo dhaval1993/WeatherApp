@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="home">
+ 
+  <ion-grid>
+    <ion-row>
+      <ion-col width-50 offset-25>
+          <!-- <h2 class="location">{{weather?.current_observation.location.display_location.full}}</h2> -->
+          <h2>{{weather?.current_observation.display_location.full}}</h2>
+          <div class="icon"><img src="{{weather?.current_observation.icon_url}}" alt="Image not present"></div>
+          <h3>{{weather?.current_observation.weather}}</h3>
+          <h3>{{weather?.current_observation.temp_f}}</h3>
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+
